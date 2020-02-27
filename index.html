@@ -10,14 +10,51 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-navy sticky-top">
         <a href="#" class="navbar-brand">
-            <img src="logo.png" alt="logo" width="60px">|DENNIS| &lt;PIZZA INN
+            <img src="logo.png" alt="logo" width="60px">PIZZA INN
         </a>
         <button class="navbar" type="button" data-toggle="collapse" data-target="#navcontent" aria-controls="navcontent" aria-expanded="false" aria-label="Togal navigation">
-            <span class="navbar-toggler-icon"></span>
+            
+            <ul>
+                <li><a>PLACE ORDER</a>
+                    <ul>
+                        <li><a>Large Pizza</a></li>
+                        <li><a>Small Pizza</a></li>
+                        <li><a>Any Size</a></li>
+                    </ul>
+                </li>
+                <li><a>MY ACCOUNT</a>
+                <ul>
+                    <li><a>Login</a></li>
+                    <li><a>My Balance</a></li>
+                    <li><a>Deposit</a></li>
+                    <li><a>Promotions</a></li>
+                 </ul>
+                </li>
+                <li><a>ABOUT US</a>
+                <ul>
+                    <li><a>Tel</a></li>
+                    <li><a>Instagram</a></li>
+                    <li><a>Facebook</a></li>
+                    <li><a>Twitter</a></li>
+                </ul>
+                </li>
+                <li><a>CONTACT US</a>
+                <ul>
+                    <li><a>Maps</a></li>
+                    <li><a>Directions</a></li>
+                </ul>
+                </li>
+                <li><a>OTHERS</a>
+                <ul>
+                    <li><a>Aplly For a Job</a></li>
+                    <li><a>Play Demo</a></li>
+                </ul>
+                </li> 
+            </ul>
         </button>
     </nav>
     <div class="container-fluid text-white" id="landingpage">
-        <div class="row flex-column min-vh-100 text-center align-items-center justify-content-center"> 
+        <div class="row flex-column min-vh-100 text-center align-items-center justify-content-center p-4"> 
             <h1>ORDER YOUR PIZZA HERE</h1>
             <div class="container form-group">
                 <form action="#" class="form-group justfy-content-center align-items-center">
@@ -26,6 +63,8 @@
                     <input type="text" class="form-control" placeholder="Enter your name">
                     <label for="number">Phone Number</label>
                     <input type="text" class="form-control" placeholder="Enter Your Phone Number">
+                    <div>
+                    <label for="cost">Enter the number of pizza required</label>
                     <label for="small">Small Pizza</label>
                     <input type="checkbox" name="" id="">
                     <label for="medium">Medium Pizza</label>
@@ -33,7 +72,18 @@
                     <label for="large">Large Pizza</label>
                     <input type="checkbox" name="" id="">
                     </div>
+                    </div>
+                    <p>Want a pizza with:</p>
+                    Crispy<input type="checkbox">
+                    Stuffed<input type="checkbox" name="" id="">
+                    Gluten-free<input type="checkbox">
+                    <div>
+                        <div class="col-sm-6 form-group justfy-content-center align-items-center">
+                            <label for="total">Total Cost</label>
+                            <input type="text">
+                        </div>
                    <button type="" class="btn btn-outline-success">Place Order</button>
+                    </div>
                 </form>
 
             </div>
