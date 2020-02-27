@@ -1,0 +1,8 @@
+body {
+    background-color: navy;
+}
+#landingpage {
+    background-image: url("../piz.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
