@@ -57,7 +57,7 @@
         <div class="row flex-column min-vh-100 text-center align-items-center justify-content-center p-4"> 
             <h1>ORDER YOUR PIZZA HERE</h1>
             <div class="container form-group">
-                <form action="#" class="form-group justfy-content-center align-items-center">
+                <form action="#" class="form-group justfy-content-center align-items-center form-horizontal">
                     <div class="form-group row flex-row justify-content-center">
                     <label for="name">Your Name</label>
                     <input type="text" class="form-control" placeholder="Enter your name">
@@ -79,9 +79,28 @@
                     Stuffed<input type="radio" name="type" id="">
                     Gluten-free<input type="radio" name="type" id="">
                     <div>
-                   <button type="" class="btn btn-outline-success">Place Order</button>
-                    </div>
-                </form>
+                        <div class="container-fluid" id="topping">
+                            <h4>WHICH TOPPINGS?</h4>
+                            <div class="form-control">
+                            <label><input type="radio" name="type" id="">Onions</label>
+                            <label><input type="radio" name="type" id="">Sausage</label>
+                            <label><input type="radio" name="type" id="">Bacon</label>
+                            <label><input type="radio" name="type" id="">Black Olives</label>
+                            <label><input type="radio" name="type" id="">Green Peppers</label>
+                            <div class="row justify-content-center align-items-center">
+                            <h5 class="text-white">Total cost</h5>
+                            <div class="form-control">
+                                <input type="number">
+                                <div class="container-fluid">
+                                    <button class="btn btn-outline-success p-2 m-2">Place Order</button>
+                                </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        </form>
+            </div>
+            <div class="">
 
             </div>
 </body>
