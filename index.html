@@ -15,12 +15,7 @@
         <button class="navbar" type="button" data-toggle="collapse" data-target="#navcontent" aria-controls="navcontent" aria-expanded="false" aria-label="Togal navigation">
             
             <ul>
-                <li><a>PLACE ORDER</a>
-                    <ul>
-                        <li><a>Large Pizza</a></li>
-                        <li><a>Small Pizza</a></li>
-                        <li><a>Any Size</a></li>
-                    </ul>
+                <li><a>HOME</a>
                 </li>
                 <li><a>MY ACCOUNT</a>
                 <ul>
@@ -31,17 +26,11 @@
                  </ul>
                 </li>
                 <li><a>ABOUT US</a>
-                <ul>
-                    <li><a>Tel</a></li>
-                    <li><a>Instagram</a></li>
-                    <li><a>Facebook</a></li>
-                    <li><a>Twitter</a></li>
-                </ul>
+                <p><a>Dennis Pizza - Dennis Pizza is not only proud to be Kenya's Favorite Pizza, but also the leading pizza restaurant in Africa. Our innovation and creativity has enabled us to offer the widest range of pizzas allowing our customers to choose from our range of classic, favorite, signature and something special pizzas. Our pizzas are made with thin crusts, lots of toppings, and the perfect blend of sauces. Dennis Pizza gives each and every customer quality and value for their money. But, that’s not all. We also offer great side orders like potato wedges, chicken wings and pop-itz. And of course, we have our unforgettable hot subs - a French baguette filled with mozzarella cheese and toppings of your choice. Dennis Pizza - Try Something Amazing.</a></p>
                 </li>
-                <li><a>CONTACT US</a>
+                <li><a>LOCATION</a>
                 <ul>
-                    <li><a>Maps</a></li>
-                    <li><a>Directions</a></li>
+                    <li><a>Map</a></li>
                 </ul>
                 </li>
                 <li><a>OTHERS</a>
@@ -53,11 +42,12 @@
             </ul>
         </button>
     </nav>
+    <button class="btn btn-outline-success justfy-content-center align-items-center" id="online"></button>
     <div class="container-fluid text-white" id="landingpage">
         <div class="row flex-column min-vh-100 text-center align-items-center justify-content-center p-4"> 
             <h1>ORDER YOUR PIZZA HERE</h1>
             <div class="container form-group">
-                <form action="#" class="form-group justfy-content-center align-items-center form-horizontal">
+                <form action="#" class="form-group justfy-content-center align-items-center form-horizontal" id="pizza">
                     <div class="form-group row flex-row justify-content-center">
                     <label for="name">Your Name</label>
                     <input type="text" class="form-control" placeholder="Enter your name">
@@ -74,25 +64,28 @@
                     <input type="radio" name="size" id="">
                     </div>
                     </div>
+                    <div class="container">
                     <p>Want a pizza with:</p>
                     Crispy<input type="radio" name="type" id="">
                     Stuffed<input type="radio" name="type" id="">
                     Gluten-free<input type="radio" name="type" id="">
-                    <div>
-                        <div class="container-fluid" id="topping">
+                    </div>
+                        <div class="container-fluid form-group min-vh-20" id="topping">
                             <h4>WHICH TOPPINGS?</h4>
+                        </div>
                             <div class="form-control">
                             <label><input type="radio" name="type" id="">Onions</label>
                             <label><input type="radio" name="type" id="">Sausage</label>
                             <label><input type="radio" name="type" id="">Bacon</label>
                             <label><input type="radio" name="type" id="">Black Olives</label>
                             <label><input type="radio" name="type" id="">Green Peppers</label>
+                            </div>
                             <div class="row justify-content-center align-items-center">
                             <h5 class="text-white">Total cost</h5>
                             <div class="form-control">
                                 <input type="number">
                                 <div class="container-fluid">
-                                    <button class="btn btn-outline-success p-2 m-2">Place Order</button>
+                                    <button class="btn btn-outline-success p-2 m-2" id="order">Place Order</button>
                                 </div>
                                 </div>
                             </div>
@@ -103,5 +96,7 @@
             <div class="">
 
             </div>
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>

@@ -35,3 +35,35 @@ ul li ul li {
 ul li:hover ul li {
     display: block;
 }
+
+ul p {
+    float: left;
+   width: 200px; 
+   height: 40px;
+   background-color: blueviolet;
+   opacity: .8;
+   line-height: 40px;
+   text-align: center;
+   font-size: 20px;
+}
+
+
+ul li p {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+ul li p {
+    display: none;
+}
+ul li p:hover ul li p {
+    display: block;
+}
+
+#online {
+    background-image: url("../online.jpg");
+    size: 100px;
+    width: 223px;
+    height: 61px;
+    mask-position: inherit;
+}
