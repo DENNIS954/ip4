@@ -1,7 +1,5 @@
-$("form#pizza").submit(function(event) {
-    event.preventDefault();
-    var inputtedName = $("input#name").val();
-    var inputtedPhoneNumber = $("input#number").val();
-    var newUser = new User(inputtedName, inputtedPhoneNumber);
+$(document).ready(function(){
+    $("#pizza").slideUp(1000).delay(1000).slideDown(1000).slideRight(1000);
 
-    $()
+
+});
