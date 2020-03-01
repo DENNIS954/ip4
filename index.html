@@ -1,102 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PIZZA INN</title>
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-navy sticky-top">
         <a href="#" class="navbar-brand">
             <img src="logo.png" alt="logo" width="60px">PIZZA INN
         </a>
-        <button class="navbar" type="button" data-toggle="collapse" data-target="#navcontent" aria-controls="navcontent" aria-expanded="false" aria-label="Togal navigation">
-            
+        <button class="navbar" type="button" data-toggle="collapse" data-target="#navcontent" aria-controls="navcontent"
+            aria-expanded="false" aria-label="Togal navigation">
+
             <ul>
                 <li><a>HOME</a>
                 </li>
                 <li><a>MY ACCOUNT</a>
-                <ul>
-                    <li><a>Login</a></li>
-                    <li><a>My Balance</a></li>
-                    <li><a>Deposit</a></li>
-                    <li><a>Promotions</a></li>
-                 </ul>
+                    <ul>
+                        <li><a>Login</a></li>
+                        <li><a>My Balance</a></li>
+                        <li><a>Deposit</a></li>
+                        <li><a>Promotions</a></li>
+                    </ul>
                 </li>
                 <li><a>ABOUT US</a>
-                <p><a>Dennis Pizza - Dennis Pizza is not only proud to be Kenya's Favorite Pizza, but also the leading pizza restaurant in Africa. Our innovation and creativity has enabled us to offer the widest range of pizzas allowing our customers to choose from our range of classic, favorite, signature and something special pizzas. Our pizzas are made with thin crusts, lots of toppings, and the perfect blend of sauces. Dennis Pizza gives each and every customer quality and value for their money. But, that’s not all. We also offer great side orders like potato wedges, chicken wings and pop-itz. And of course, we have our unforgettable hot subs - a French baguette filled with mozzarella cheese and toppings of your choice. Dennis Pizza - Try Something Amazing.</a></p>
+                    <p><a>Dennis Pizza - Dennis Pizza is not only proud to be Kenya's Favorite Pizza, but also the
+                            leading pizza restaurant in Africa. Our innovation and creativity has enabled us to offer
+                            the widest range of pizzas allowing our customers to choose from our range of classic,
+                            favorite, signature and something special pizzas. Our pizzas are made with thin crusts, lots
+                            of toppings, and the perfect blend of sauces. Dennis Pizza gives each and every customer
+                            quality and value for their money. But, that’s not all. We also offer great side orders like
+                            potato wedges, chicken wings and pop-itz. And of course, we have our unforgettable hot subs
+                            - a French baguette filled with mozzarella cheese and toppings of your choice. Dennis Pizza
+                            - Try Something Amazing.</a></p>
                 </li>
                 <li><a>LOCATION</a>
-                <ul>
-                    <li><a>Map</a></li>
-                </ul>
+                    <ul>
+                        <li><a>Map</a></li>
+                    </ul>
                 </li>
                 <li><a>OTHERS</a>
-                <ul>
-                    <li><a>Aplly For a Job</a></li>
-                    <li><a>Play Demo</a></li>
-                </ul>
-                </li> 
+                    <ul>
+                        <li><a>Aplly For a Job</a></li>
+                        <li><a>Play Demo</a></li>
+                    </ul>
+                </li>
             </ul>
         </button>
     </nav>
     <button class="btn btn-outline-success justfy-content-center align-items-center" id="online"></button>
     <div class="container-fluid text-white" id="landingpage">
-        <div class="row flex-column min-vh-100 text-center align-items-center justify-content-center p-4"> 
+        <div class="row flex-column min-vh-100 text-center align-items-center justify-content-center p-4">
             <h1>ORDER YOUR PIZZA HERE</h1>
             <div class="container form-group">
-                <form action="#" class="form-group justfy-content-center align-items-center form-horizontal" id="pizza">
+                <form action="#" class="form-group justfy-content-center align-items-center form-horizontal" id="dennis">
                     <div class="form-group row flex-row justify-content-center">
-                    <label for="name">Your Name</label>
-                    <input type="text" class="form-control" placeholder="Enter your name">
-                    <label for="number">Phone Number</label>
-                    <input type="text" class="form-control" placeholder="Enter Your Phone Number">
-                    <div>
-                    <label for="cost">Enter the number of pizza required</label><input type="number" class="form-control" placeholder="Enter the number of pizza you need">
-                    <h3>What size of pizza do you need;</h3>
-                    <label for="small">Small Pizza</label>
-                    <input type="radio" name="size" id="">
-                    <label for="medium">Medium Pizza</label>
-                    <input type="radio" name="size" id="">
-                    <label for="large">Large Pizza</label>
-                    <input type="radio" name="size" id="">
-                    </div>
+                        <label for="name" name="yourName">Your Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your name">
+                        <label for="number">Phone Number</label>
+                        <input type="number" class="form-control" placeholder="Enter Your Phone Number" name="phone">
+                        <div>
+                            <label for="cost">Enter the number of pizza required</label><input type="number"
+                                class="form-control" placeholder="Enter the number of pizza you need" name="pizzanumber">
+                            <h3>What size of pizza do you need;</h3>
+                            <label for="small">Small Pizza</label>
+                            <input type="radio" name="size" value="sm">
+                            <label for="medium">Medium Pizza</label>
+                            <input type="radio" name="size" value="md">
+                            <label for="large">Large Pizza</label>
+                            <input type="radio" name="size" value="lg">
+                        </div>
                     </div>
                     <div class="container">
-                    <p>Want a pizza with:</p>
-                    Crispy<input type="radio" name="type" id="">
-                    Stuffed<input type="radio" name="type" id="">
-                    Gluten-free<input type="radio" name="type" id="">
+                        <p>Want a pizza with:</p>
+                        Crispy<input type="radio" name="type" value="cr">
+                        Stuffed<input type="radio" name="type" value="st">
+                        Gluten-free<input type="radio" name="type" value="gl">
                     </div>
-                        <div class="container-fluid form-group min-vh-20" id="topping">
-                            <h4>WHICH TOPPINGS?</h4>
+                    <div class="container-fluid form-group min-vh-20" id="topping">
+                        <h4>WHICH TOPPINGS?</h4>
+                    </div>
+                    <div class="form-control">
+                        <label><input type="radio" name="toppins" value="on">Onions</label>
+                        <label><input type="radio" name="toppins" value="sa">Sausage</label>
+                        <label><input type="radio" name="toppins" value="ba">Bacon</label>
+                        <label><input type="radio" name="toppins" value="bk">Black Olives</label>
+                        <label><input type="radio" name="toppins" value="pe">Green Peppers</label>
+                    </div>
+                    <div class="row justify-content-center align-items-center">
+                        <h5 class="text-white">Total cost</h5>
+                        <div class="form-control">
+                            <input type="number"name="total">
+                            <div class="container-fluid">
+                                <button class="btn btn-outline-success p-2 m-2" id="button1">Place
+                                    Order</button>
+                                <p id="demo"></p>
+                            </div>
                         </div>
-                            <div class="form-control">
-                            <label><input type="radio" name="type" id="">Onions</label>
-                            <label><input type="radio" name="type" id="">Sausage</label>
-                            <label><input type="radio" name="type" id="">Bacon</label>
-                            <label><input type="radio" name="type" id="">Black Olives</label>
-                            <label><input type="radio" name="type" id="">Green Peppers</label>
-                            </div>
-                            <div class="row justify-content-center align-items-center">
-                            <h5 class="text-white">Total cost</h5>
-                            <div class="form-control">
-                                <input type="number">
-                                <div class="container-fluid">
-                                    <button class="btn btn-outline-success p-2 m-2" id="button1">Place Order</button>
-                                </div>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        </form>
+                    </div>
             </div>
-            <div class="">
+        </div>
+        </form>
+    </div>
+    <div class="">
 
-            </div>
-            <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
+    </div>
 </body>
+
 </html>
