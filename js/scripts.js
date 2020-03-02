@@ -1,31 +1,21 @@
 $(document).ready(function () {
-
     //$("#pizza").slideUp(1000).delay(1500).slideDown(1000).slideRight(1000);
+    var small = { name: "smallPizza", cost: 400 };
+    var medium = { name: "mediumPizza", cost: 950 };
+    var large = { name: "largePizza", cost: 1200 };
 
+
+    var userName = $("input[type=text][name=yourName]").val();
+    var pizzaToppings = $("input[type=radio][name=topppins]").val();
     var userName = $("input[type=text][name=yourName]").val();
     var pizzaToppings = $("input[type=radio][name=topppins]").val();
     var totalAmount = $("input[type=number][name=total]").val();
 
 
-    var small = { name: "smallPizza", cost: 400 };
-    var medium = { name: "mediumPizza", cost: 950 };
-    var large = { name: "largePizza", cost: 1200 };
-
-    var crispy = { name: "crispyP
-    var userName = $("input[type=text][name=yourName]").val();
-    var pizzaToppings = $("input[type=radio][name=topppins]").val();
-    var totalAmount = $("input[
-        var userName = $("input[type=text][name=yourName]").val();
-        var pizzaToppings = $("input[type=radio][name=topppins]").val();
-        var totalAmount = $("input[type=number][name=total]").val();
-    
-    
-        var small = { name: type=number][name=total]").val();
-
-
-    var small = { name: izza", cost: 600 };
+    var crispy = { name: "crispyizza", cost: 600 };
     var stuffed = { name: "stuffedPizza", cost: 800 };
     var glutten = { name: "glutenPizza", cost: 450 };
+
 
     var onions = { name: "onionPizza", cost: 600 };
     var sausage = { name: "sausagePizza", cost: 500 };
@@ -59,19 +49,15 @@ $(document).ready(function () {
 
     }
 
-    var getPhone = function (){
-     var phone = $("input[type=number][name=phone]").val();
-     console.log(phone);
-     return phone;
-
-
+    var getPhone = function () {
+        var phone = $("input[type=number][name=phone]").val();
+        console.log(phone);
+        return phone;
     }
-
-
 
     $("form#dennis").submit(function (e) {
         e.preventDefault();
-        getType()
+        getSize
 
     });
 });
