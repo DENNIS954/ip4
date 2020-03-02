@@ -1,6 +1,6 @@
 # Portfolio landing Page
 
-This a web portfolio to showcase my work.
+This is a perfect web to apply for your pizza online.
 
 ## Author
 
@@ -8,7 +8,6 @@ This a web portfolio to showcase my work.
 
 ## Features
 
-##DESCRIPTION
 This is a website where customers can order their for pizza online.
  
  ## live link
