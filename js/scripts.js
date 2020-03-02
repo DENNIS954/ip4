@@ -1,13 +1,5 @@
 $(document).ready(function () {
 
-    $("button").click(function(){
-        $("button").animate({
-          left: '250px',
-          opacity: '0.5',
-          height: '150px',
-          width: '150px'
-        });
-      });
     //$("#pizza").slideUp(1000).delay(1500).slideDown(1000).slideRight(1000);
 
     var userName = $("input[type=text][name=yourName]").val();
