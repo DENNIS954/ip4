@@ -57,14 +57,14 @@
         <div class="row flex-column min-vh-100 text-center align-items-center justify-content-center p-4"> 
             <h1>ORDER YOUR PIZZA HERE</h1>
             <div class="container form-group">
-                <form action="#" class="form-group justfy-content-center align-items-center form-horizontal">
+                <form action="#" class="form-group justfy-content-center align-items-center form-horizontal" id="dennis">
                     <div class="form-group row flex-row justify-content-center">
                     <label for="name">Your Name</label>
-                    <input type="text" class="form-control" placeholder="Enter your name">
+                    <input type="text" name="yourName" class="form-control" placeholder="Enter your name">
                     <label for="number">Phone Number</label>
-                    <input type="text" class="form-control" placeholder="Enter Your Phone Number">
+                    <input type="text" class="form-control" placeholder="Enter Your Phone Number" name="phone">
                     <div>
-                    <label for="cost">Enter the number of pizza required</label><input type="number" class="form-control" placeholder="Enter the number of pizza you need">
+                    <label for="cost">Enter the number of pizza required</label><input type="number" class="form-control" placeholder="Enter the number of pizza you need" name="pizzanumber">
                     <h3>What size of pizza do you need;</h3>
                     <label for="small">Small Pizza</label>
                     <input type="radio" name="size" id="">
@@ -77,9 +77,9 @@
                     <p>Want a pizza with:</p>
                     Crispy<input type="radio" name="type" id="">
                     Stuffed<input type="radio" name="type" id="">
-                    Gluten-free<input type="radio" name="type" id="">
+                    Gluten-free<input type="radio" name="type">
                     <div>
-                        <div class="container-fluid" id="topping">
+                        <div class="container-fluid" id="topping" name="topppins">
                             <h4>WHICH TOPPINGS?</h4>
                             <div class="form-control">
                             <label><input type="radio" name="type" id="">Onions</label>
@@ -90,9 +90,9 @@
                             <div class="row justify-content-center align-items-center">
                             <h5 class="text-white">Total cost</h5>
                             <div class="form-control">
-                                <input type="number">
+                                <input type="number" name="total">
                                 <div class="container-fluid">
-                                    <button class="btn btn-outline-success p-2 m-2">Place Order</button>
+                                    <button class="btn btn-outline-success p-2 m-2" name="button">Place Order</button>
                                 </div>
                                 </div>
                             </div>
