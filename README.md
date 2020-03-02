@@ -12,7 +12,7 @@ This a web portfolio to showcase my work.
 This is a website where customers can order their for pizza online.
  
  ## live link
- https://dennis954.github.io/IP4/
+ https://dennis954.github.io/ip4/
 
 
 
