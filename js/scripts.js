@@ -1,4 +1,13 @@
 $(document).ready(function () {
+
+    $("button").click(function(){
+        $("button").animate({
+          left: '250px',
+          opacity: '0.5',
+          height: '150px',
+          width: '150px'
+        });
+      });
     //$("#pizza").slideUp(1000).delay(1500).slideDown(1000).slideRight(1000);
 
     var userName = $("input[type=text][name=yourName]").val();
@@ -10,7 +19,19 @@ $(document).ready(function () {
     var medium = { name: "mediumPizza", cost: 950 };
     var large = { name: "largePizza", cost: 1200 };
 
-    var crispy = { name: "crispyPizza", cost: 600 };
+    var crispy = { name: "crispyP
+    var userName = $("input[type=text][name=yourName]").val();
+    var pizzaToppings = $("input[type=radio][name=topppins]").val();
+    var totalAmount = $("input[
+        var userName = $("input[type=text][name=yourName]").val();
+        var pizzaToppings = $("input[type=radio][name=topppins]").val();
+        var totalAmount = $("input[type=number][name=total]").val();
+    
+    
+        var small = { name: type=number][name=total]").val();
+
+
+    var small = { name: izza", cost: 600 };
     var stuffed = { name: "stuffedPizza", cost: 800 };
     var glutten = { name: "glutenPizza", cost: 450 };
 
@@ -55,10 +76,10 @@ $(document).ready(function () {
     }
 
 
+
     $("form#dennis").submit(function (e) {
         e.preventDefault();
-        alert("Your Order has been received successfully,the destination address will be send to you to your number shortly!")
-        
+        getType()
 
     });
 });
